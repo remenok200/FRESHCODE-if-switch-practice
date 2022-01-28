@@ -5,13 +5,21 @@
  */
 
 const whatToDoAtTrafficLights = function(color) {
-    if (typeof color !== "string") return 'ERROR! Напишите цвет светофора, это должна быть строка!';
+    if (typeof color !== "string") {
+        return 'ERROR! Напишите цвет светофора, это должна быть строка!';
+    }
     
-    if (color.toLowerCase() === "красный") return 'Сейчас красный! Стой на месте.';
-    else if (color.toLowerCase() === "желтый") return 'Сейчас желтый! Стой на месте.';
-    else if (color.toLowerCase() === "зеленый") return 'Сейчас зеленый! Можешь идти.';
+    if (color.toLowerCase() === "красный") {
+        return 'Сейчас красный! Стой на месте.';
+    }
+    else if (color.toLowerCase() === "желтый") {
+        return 'Сейчас желтый! Стой на месте.';
+    }
+    else if (color.toLowerCase() === "зеленый") {
+        return 'Сейчас зеленый! Можешь идти.';
+    }
     
-    return 'Цвет, что Вы передаете (' + color + ') к цветам светофора не относится.';
+        return 'Цвет, что Вы передаете (' + color + ') к цветам светофора не относится.';
 }
 
 console.log(whatToDoAtTrafficLights(123));
@@ -29,8 +37,9 @@ console.log(whatToDoAtTrafficLights('оранжевый'));
 */
 
 const calculator = function(operator, number1, number2) {
-    if (typeof operator !== 'string' || typeof number1 !== 'number' || typeof number2 !== 'number')
-    return 'ERROR! Поместите оператор в кавычки, а операнды должны быть числами. Проверьте, что передаете!';
+    if (typeof operator !== 'string' || typeof number1 !== 'number' || typeof number2 !== 'number') {
+        return 'ERROR! Поместите оператор в кавычки, а операнды должны быть числами. Проверьте, что передаете!';
+    }
 
     result = 0;
 
@@ -75,7 +84,9 @@ console.log(calculator('**', 2, 5));
 */
 
 const whatTimeOfYear = function(number) {
-    if (typeof number !== 'number') return 'ERROR! Введите номер месяца! Номер месяца - это число.';
+    if (typeof number !== 'number') {
+        return 'ERROR! Введите номер месяца! Номер месяца - это число.';
+    }
 
     result = '';
     
